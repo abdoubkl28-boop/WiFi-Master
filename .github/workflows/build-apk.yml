@@ -26,6 +26,7 @@ jobs:
             echo "Android project not found in ZIP"
             exit 1
           fi
+          cp AndroidManifest-fixed.xml "$PROJECT_DIR/app/src/main/AndroidManifest.xml"
           cp -a "$PROJECT_DIR"/. .
 
       - name: Set up Java
